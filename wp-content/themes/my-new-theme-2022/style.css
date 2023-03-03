@@ -1,0 +1,1269 @@
+/*
+    Theme name: My New Theme 2022
+    Author: Maria Maslovska
+    Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+/* HEADER START */
+
+#main-header {
+    width: 100%;
+    height: 100vh;
+    background: fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(0.52);
+    position: relative;
+}
+
+#main-header-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+#main-navigation:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#main-navigation .fa-bars,
+#main-navigation .fa-close {
+    display: none;
+}
+
+#main-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-navigation li {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+#main-navigation li:last-child {
+    float: right;
+}
+
+#main-navigation li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 10px 16px;
+}
+
+#main-navigation li>a:hover {
+    background-color: #CCC;
+    color: black;
+}
+
+#main-navigation li>a.current-menu-item {
+    color: #fa3627;
+    font-weight: bold;
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    margin: 0 13% 40px;
+    color: white;
+    text-align: center;
+}
+
+.headings a {
+    text-decoration: none;
+}
+
+.page-header {
+    max-width: 500px;
+    height: 342px;
+    padding: 50px 20px 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 7em;
+    font-weight: 400;
+}
+
+.page-header.archive {
+    font-size: 4.2em;
+}
+
+.page-subtitle {
+    margin: 50px 10px 20px;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.page-subtitle:hover {
+    background-color: #CCC;
+    color: black;
+}
+
+.open {
+    position: absolute;
+    bottom: 0;
+    max-width: 260px;
+    margin: 16px 20px;
+    padding: 6px 10px;
+    font-size: 1.6em;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+
+/* HEADER END */
+
+.main-page {
+    padding: 30px 10%;
+}
+
+.archive-page {
+    padding: 30px 20%;
+}
+
+.page-content {
+    font-size: 1.3em;
+}
+
+.page-position a {
+    text-decoration: none;
+}
+
+.parent-link {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: maroon;
+}
+
+.parent-link.about-link {
+    font-size: 1.1em;
+    color: white;
+}
+
+.current-page-title:before {
+    content: ' / ';
+}
+
+.current-page-title {
+    color: rgb(96, 0, 0);
+}
+
+.current-page-title.about-link {
+    color: white;
+}
+
+.parent-link:hover {
+    text-decoration: underline;
+}
+
+.pagination-links {
+    display: inline-block;
+    padding: 2px 3px;
+    margin-top: 5px;
+}
+
+.pagination-links a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(94, 0, 0);
+}
+
+.pagination-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* MENU START */
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 40px;
+    margin: 0;
+}
+
+.menu {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0 14% 100px;
+}
+
+.menu .title {
+    font-size: 4em;
+    padding: 70px;
+}
+
+.menu-wrap {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-bottom: none;
+}
+
+.menu-header>* {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.menu-btn {
+    width: 100%;
+    border: none;
+    padding: 12px 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+}
+
+.menu-btn:hover {
+    background-color: #F44336;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.menu-body {
+    padding: 30px 10px 40px;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid grey;
+    padding: 20px 10px;
+    font-size: 2em;
+}
+
+.menu-item .item-title {
+    font-weight: bold;
+}
+
+.item-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.ingredients {
+    padding-top: 30px;
+}
+
+.menu-item:last-child {
+    border: none;
+}
+
+.hot,
+.new,
+.price {
+    font-weight: normal;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.hot {
+    background-color: #F44336;
+}
+
+.new {
+    background-color: #9E9E9E;
+}
+
+.price {
+    background-color: #616161;
+    color: white;
+}
+
+.special-price {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* MENU CARD START */
+
+.pizza-menu,
+.salads-menu,
+.starter-menu,
+.drink-menu {
+    margin-bottom: 120px;
+}
+
+.pizza-menu h2,
+.salads-menu h2,
+.starter-menu h2,
+.drink-menu h2 {
+    font-size: 2.2em;
+    text-align: center;
+    background-color: RGBA(174, 204, 165, 0.05);
+}
+
+.pizza-menu h2 a,
+.salads-menu h2 a,
+.starter-menu h2 a,
+.drink-menu h2 a {
+    text-decoration: none;
+    color: #74240F;
+}
+
+.pizza-menu h2 a:hover,
+.salads-menu h2 a:hover,
+.starter-menu h2 a:hover,
+.drink-menu h2 a:hover {
+    text-decoration: underline;
+}
+
+.pizza-list,
+.salads-list,
+.starter-list,
+.drink-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.menu-card {
+    width: 30%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+    filter: saturate(0.8);
+}
+
+.card-img:hover {
+    opacity: 0.8;
+}
+
+.menu-card p {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.3em;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-subtitle {
+    font-size: 1.1em;
+}
+
+.card-more {
+    display: block;
+    border: none;
+    padding: 3px 0;
+    background-color: #4A7E52;
+    margin: auto;
+}
+
+.card-more a {
+    text-decoration: none;
+    padding: 3px 30px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.card-more:hover {
+    background-color: #3a6d42;
+}
+
+
+/* MENU CARD END */
+
+
+/* MENU ITEM START */
+
+.main-item {
+    padding: 10px 13% 60px;
+    background-color: RGBA(174, 204, 165, 0.05);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.item-meta a {
+    color: rgb(11, 94, 11);
+}
+
+.item-meta a:hover {
+    text-shadow: -1px -1px 2px rgb(216, 244, 216);
+}
+
+.item-pic {
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+.item-pic img {
+    width: 100%;
+    filter: saturate(0.85);
+}
+
+
+/* MENU ITEM END */
+
+
+/* MENU END */
+
+
+/* PROPOSITION START */
+
+.proposition-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proposition-card {
+    flex-basis: 45%;
+    margin: 2.5%;
+}
+
+.proposition-card a {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.proposition-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+    filter: saturate(0.7);
+}
+
+.proposition-card:hover {
+    opacity: 0.8;
+}
+
+.proposition-title {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #600f16;
+    width: 100%;
+    /* position: absolute;
+    bottom: 0px;
+    left: 0px; */
+    color: white;
+    padding: 3px 10px;
+}
+
+
+/* POPOSITION ITEM START */
+
+.main-proposition {
+    padding: 0 18% 80px;
+}
+
+.proposition-item {
+    background-color: RGBA(231, 55, 58, 0.05);
+    padding: 20px;
+}
+
+.proposition-img {
+    max-width: 100%;
+    filter: saturate(0.77);
+}
+
+.proposition-img img {
+    width: 100%;
+}
+
+.proposition-link {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.proposition-link a {
+    color: green;
+    font-weight: bold;
+}
+
+.proposition-link a:hover {
+    color: darkgray;
+}
+
+
+/* PROPOSITION ITEM END */
+
+.front-slider {
+    filter: saturate(0.7);
+}
+
+
+/* PROPOSITION END */
+
+
+/* ABOUT START */
+
+.about {
+    width: 100%;
+    background-color: #8B5F5B;
+    color: white;
+    padding: 0 15% 80px;
+}
+
+.parent-title {
+    margin: 0;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.parent-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.parent-title:after {
+    content: ' / ';
+}
+
+.links-list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-list li {
+    display: inline-block;
+}
+
+.links-list a:hover {
+    text-decoration: underline;
+}
+
+.links-list li:after {
+    content: ' / ';
+}
+
+.links-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-chef {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+}
+
+.chef-desc {
+    flex: 70%;
+}
+
+.chef-title {
+    color: white;
+}
+
+.chef-header {
+    color: maroon;
+}
+
+.chef-title:hover {
+    color: rgb(194, 194, 194);
+}
+
+.chef-img {
+    max-width: 100%;
+}
+
+.chef-img img {
+    width: 100%;
+    filter: saturate(0.7);
+}
+
+.open-cols {
+    display: flex;
+    font-size: 1.3em;
+}
+
+.open-col {
+    flex: 50%;
+}
+
+.main-chef {
+    width: 100%;
+    padding: 0 18% 80px;
+}
+
+.chef-item {
+    background-color: RGBA(172, 150, 128, 0.05);
+    color: #581012;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.chef {
+    font-weight: bold;
+}
+
+.chef-pic {
+    text-align: end;
+}
+
+.chef-pic img {
+    border-radius: 50%;
+    filter: saturate(0.7);
+}
+
+.chef-pic img:hover {
+    outline: 1px solid white;
+}
+
+.restaurant-pic {
+    max-width: 100%;
+}
+
+.restaurant-pic img {
+    width: 100%;
+    filter: saturate(0.7);
+}
+
+
+/* ABOUT END */
+
+
+/* CONTACT START */
+
+.contact {
+    width: 100%;
+    background-color: #6C7A81;
+    color: white;
+    padding: 0 14% 100px;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+}
+
+.contact-text span {
+    background: #000;
+    padding: 3px 5px;
+    border-radius: 10%;
+}
+
+#contact-form h3 {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+#contact-form input {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+}
+
+#contact-form input[type="submit"] {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #d5d5d5;
+}
+
+#contact-form input:focus {
+    outline: none;
+}
+
+
+/* CONTACT END */
+
+
+/* BLOG START */
+
+.main-blogs {
+    width: 100%;
+    padding: 0 18% 80px;
+}
+
+.blog {
+    display: flex;
+}
+
+.archive-post {
+    display: flex;
+}
+
+.post-desc {
+    flex: 45%;
+    padding: 0 20px;
+}
+
+.archive-desc {
+    flex: 55%;
+    padding: 0 20px;
+}
+
+.post-meta {
+    font-size: 0.8em;
+}
+
+.post-meta a {
+    color: rgb(11, 94, 11);
+}
+
+.post-meta a:hover {
+    text-shadow: -1px -1px 2px rgb(216, 244, 216);
+}
+
+.post-footer {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: RGBA(150, 34, 34, 0.1);
+}
+
+.post-footer a {
+    text-decoration: none;
+    color: rgb(150, 34, 34);
+}
+
+.post-footer:hover {
+    background-color: RGBA(150, 34, 34, 0.16);
+}
+
+.post-baner {
+    flex: 55%;
+    margin: auto;
+}
+
+.archive-baner {
+    flex: 45%;
+    margin: auto;
+}
+
+.post-item {
+    background-color: RGBA(172, 150, 128, 0.05);
+    color: #581012;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.post-desc img {
+    width: 100%;
+}
+
+.post-title {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: maroon;
+}
+
+.post-baner img {
+    max-width: 100%;
+    filter: saturate(0.79);
+}
+
+.post-pic {
+    max-width: 100%;
+}
+
+.post-pic img {
+    width: 100%;
+    filter: saturate(0.79);
+}
+
+
+/* BLOG END */
+
+
+/* FOOTER START */
+
+.site-footer {
+    padding: 0px 12%;
+    width: 100%;
+    background-color: #000;
+}
+
+.footer-container {
+    padding: 30px 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col {
+    color: white;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-col h1 {
+    margin: 0;
+}
+
+.footer-col.col1 p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.footer-col .nav-list {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.footer-col .nav-list li {
+    margin: 6px 0;
+}
+
+.footer-col h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.home-link-footer a {
+    font-size: 2.2rem;
+    font-weight: 100;
+    color: #F44336;
+}
+
+.home-link-footer a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-col.col2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-col.col3 a:hover {
+    color: rgb(213, 211, 211);
+}
+
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-list li {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+.social-icons-list li:last-child {
+    margin-right: 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.color-facebook {
+    background-color: #4862a3;
+}
+
+.color-instagram {
+    background-color: #d8226b;
+}
+
+
+/* FOOTER END */
+
+
+/* MEDIA QUERIES START*/
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+    #main-navigation li:last-child {
+        float: none;
+    }
+    #main-navigation .fa-bars {
+        display: block;
+        padding: 10px 16px;
+        font-size: 1.8em;
+        color: white;
+    }
+    #main-navigation>ul li {
+        display: none;
+    }
+    #main-navigation:hover ul li {
+        display: block;
+    }
+    #main-navigation li:hover {
+        background-color: #CCC;
+    }
+    #main-navigation:hover .fa-bars {
+        display: none;
+    }
+    #main-navigation:hover .fa-close {
+        display: block;
+        padding: 10px 16px;
+        font-size: 1.8em;
+        color: white;
+    }
+    .page-header {
+        font-size: 6em;
+        padding: 62px 15px 10px;
+    }
+    .page-header.archive {
+        font-size: 3.8em;
+    }
+    .page-subtitle {
+        margin: 60px 10px 20px;
+        padding: 12px;
+        font-size: 2.1em;
+    }
+    .open {
+        font-size: 1.5em;
+    }
+    .menu .title {
+        font-size: 3.7em;
+        padding: 60px;
+    }
+    .menu,
+    .contact {
+        padding: 0 12% 80px;
+    }
+    .main-page {
+        padding: 30px 10%;
+    }
+    .archive-page {
+        padding: 30px 14%;
+    }
+    .menu-card:nth-child(3n) {
+        margin-right: 6%;
+    }
+    .menu-card {
+        width: 47%;
+        margin-right: 6%;
+    }
+    .menu-card:nth-child(2n) {
+        margin-right: 0;
+    }
+    .proposition-cards {
+        flex-direction: column;
+        padding: 0 0 15px;
+    }
+    .main-blogs {
+        padding: 0 10% 80px;
+    }
+    .main-proposition {
+        padding: 0 12% 60px;
+    }
+    .main-item {
+        padding: 10px 12% 60px;
+    }
+    .proposition-item {
+        padding: 12px;
+    }
+    .about {
+        padding: 0 10% 70px;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .archive-post {
+        flex-direction: column;
+    }
+    .post-desc {
+        flex: 100%;
+    }
+    .post-baner {
+        flex: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #main-navigation li:last-child {
+        float: none;
+    }
+    #main-navigation .fa-bars {
+        display: block;
+        padding: 10px 16px;
+        font-size: 1.8em;
+        color: white;
+    }
+    #main-navigation>ul li {
+        display: none;
+    }
+    #main-navigation:hover ul li {
+        display: block;
+    }
+    #main-navigation li:hover {
+        background-color: #CCC;
+    }
+    #main-navigation:hover .fa-bars {
+        display: none;
+    }
+    #main-navigation:hover .fa-close {
+        display: block;
+        padding: 10px 16px;
+        font-size: 1.8em;
+        color: white;
+    }
+    .page-header {
+        font-size: 5em;
+        padding: 50px 10px 10px;
+    }
+    .page-header.archive {
+        font-size: 2.9em;
+    }
+    .page-subtitle {
+        margin: 60px 0 20px;
+        padding: 10px;
+        font-size: 2em;
+    }
+    .open {
+        font-size: 1.4em;
+    }
+    .menu .title {
+        font-size: 3.5em;
+        padding: 50px;
+    }
+    .menu,
+    .contact {
+        padding: 0 10% 70px;
+    }
+    .menu-card {
+        width: 100%;
+        margin-right: 0;
+    }
+    .proposition-cards {
+        flex-direction: column;
+        padding: 0 0 15px;
+    }
+    .main-page {
+        padding: 30px 10%;
+    }
+    .archive-page {
+        padding: 30px 10%;
+    }
+    .main-proposition {
+        padding: 0 10% 30px;
+    }
+    .main-item {
+        padding: 10px 10% 30px;
+    }
+    .proposition-item {
+        padding: 12px;
+    }
+    .main-blogs {
+        padding: 0 7% 80px;
+    }
+    .about {
+        padding: 0 10% 50px;
+    }
+    .about-chef {
+        flex-direction: column;
+    }
+    .chef-pic {
+        order: -1;
+    }
+    .item {
+        flex-direction: column;
+    }
+    .item-pic {
+        order: -1;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .archive-post {
+        flex-direction: column;
+    }
+    .post-item {
+        padding: 12px;
+    }
+    .post-desc {
+        flex: 100%;
+    }
+    .post-baner {
+        flex: 100%;
+    }
+    .footer-col.col1 {
+        flex-basis: 100%;
+        padding-bottom: 15px;
+    }
+    .footer-col.col1 * {
+        text-align: center;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #main-navigation li:hover {
+        background-color: #CCC;
+    }
+    #main-navigation:hover ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .page-header {
+        font-size: 4em;
+        padding: 50px 10px 10px;
+    }
+    .page-header.archive {
+        font-size: 2.2em;
+        padding: 50px 0 10px;
+    }
+    .page-subtitle {
+        margin: 60px 0 20px;
+        padding: 10px;
+        font-size: 1.8em;
+    }
+    .open {
+        font-size: 1.3em;
+    }
+    .menu .title {
+        font-size: 2.8em;
+        padding: 40px 20px;
+    }
+    .menu,
+    .contact {
+        padding: 0 6% 60px;
+    }
+    .main-page {
+        padding: 30px 6%;
+    }
+    .archive-page {
+        padding: 30px 6%;
+    }
+    .main-item {
+        padding: 0 5% 30px;
+    }
+    .main-proposition {
+        padding: 0 5% 30px;
+    }
+    .proposition-item {
+        padding: 10px;
+    }
+    .main-blogs {
+        padding: 0 4% 60px;
+    }
+    .post-item {
+        padding: 10px;
+    }
+    .about {
+        padding: 0 5% 30px;
+    }
+    .open-cols {
+        flex-direction: column;
+    }
+    .open-col {
+        flex: 100%;
+    }
+    .first-col p:last-child {
+        margin-bottom: 0;
+    }
+    .about-chef {
+        flex-direction: column;
+    }
+    .chef-pic {
+        order: -1;
+    }
+    .item {
+        flex-direction: column;
+    }
+    .item-pic {
+        order: -1;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .archive-post {
+        flex-direction: column;
+    }
+    .post-desc {
+        flex: 100%;
+    }
+    .post-baner {
+        flex: 100%;
+    }
+    .footer-col.col2,
+    .footer-col.col3 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .footer-col.col3 {
+        margin-top: 15px;
+    }
+}
+
+
+/* MEDIA QUERIES END */

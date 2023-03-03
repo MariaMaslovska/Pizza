@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garibaldi's Pizza</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">Home</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Menu</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">About</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Contact</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="text">
+            <div class="center__text">
+                <h1>Garibaldi's Pizza</h1>
+                <button>Let me see the menu</button>
+            </div>
+            <div class="open__from">
+                <p>Open from 10am to 12pm</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu">
+        <h2 class="title">The menu</h2>
+        <div class="menu__wrap">
+            <div class="menu__header">
+                <div><button class="menu__btn tablink red" onclick="menuTab(event, 'pizza')">Pizza</button></div>
+                <div><button class="menu__btn tablink" onclick="menuTab(event, 'salads')">Salads</button></div>
+                <div><button class="menu__btn tablink" onclick="menuTab(event, 'starter')">Starter</button></div>
+            </div>
+            <div id="pizza" class="menu__body">
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Margherita</div>
+                        <div class="ingredients">Fresh tomatoes, mozzarella, fresh basil</div>
+                    </div>
+                    <div class="price">$12.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Formaggio</div>
+                        <div class="ingredients">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</div>
+                    </div>
+                    <div class="price">$15.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Chicken</div>
+                        <div class="ingredients">Fresh tomatoes, mozzarella, chicken, onions</div>
+                    </div>
+                    <div class="price">$17.00</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Pineapple'o'clock</div>
+                        <div class="ingredients">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</div>
+                    </div>
+                    <div class="price">$16.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Meat Town <span class="hot">Hot!</span></div>
+                        <div class="ingredients">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</div>
+                    </div>
+                    <div class="price">$20.00</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Parma <span class="new">New</span></div>
+                        <div class="ingredients">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</div>
+                    </div>
+                    <div class="price">$21.50</div>
+                </div>
+            </div>
+            <div id="salads" class="menu__body" style="display:none">
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Chef's salad</div>
+                        <div class="ingredients">Chopped Salad Greens, Tomatoes, Ham, Turkey, Cheddar Cheese, Bacon Bits, Croutons</div>
+                    </div>
+                    <div class="price">$12.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Chicken chef salad</div>
+                        <div class="ingredients">Chopped Salad Greens, Tomatoes, Grilled Chicken, Cheddar, Bacon Bits, Croutons</div>
+                    </div>
+                    <div class="price">$15.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Spinach salad</div>
+                        <div class="ingredients">Chopped Salad Greens, Tomatoes, Pepperoncini Peppers, Green Peppers, Black Olives, Onions, Croutons, Parmesan and Our House Made Italian Dressing</div>
+                    </div>
+                    <div class="price">$17.00</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Miss Angie's italian masterpiece</div>
+                        <div class="ingredients">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</div>
+                    </div>
+                    <div class="price">$16.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Dinner salad</div>
+                        <div class="ingredients">Chopped Salad Greens, Diced Tomatoes, Croutons</div>
+                    </div>
+                    <div class="price">$20.00</div>
+                </div>
+            </div>
+            <div id="starter" class="menu__body" style="display:none">
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Starter 1</div>
+                        <div class="ingredients">List of dishes 1</div>
+                    </div>
+                    <div class="price">$12.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Starter 2</div>
+                        <div class="ingredients">List of dishes 2</div>
+                    </div>
+                    <div class="price">$15.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Starter 3</div>
+                        <div class="ingredients">List of dishes 3</div>
+                    </div>
+                    <div class="price">$17.00</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Starter 4</div>
+                        <div class="ingredients">List of dishes 4</div>
+                    </div>
+                    <div class="price">$16.50</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Starter 5</div>
+                        <div class="ingredients">List of dishes 5</div>
+                    </div>
+                    <div class="price">$20.00</div>
+                </div>
+                <div class="menu__item">
+                    <div>
+                        <div class="item__title">Starter 6</div>
+                        <div class="ingredients">List of dishes 6</div>
+                    </div>
+                    <div class="price">$21.50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2 class="title">About</h2>
+        <p class="about__text">
+            Garibaldi's Pizza Restaurant was founded in blabla by Mr. Patrizio Garibaldi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolor corrupti nisi officiis a quisquam itaque beatae, sit fugit illum hic aut quasi. Totam accusantium
+            sint distinctio nisi corrupti.
+        </p>
+        <div class="about__chef">
+            <div class="chef__desc">
+                <p><span class="chef">The Chef?</span> Mr. Italiano Himself</p>
+                <p>We are proud of our interiors.</p>
+            </div>
+            <div class="chef__pic"><img src="img/chef.jpg" alt="chef"></div>
+        </div>
+        <div class="restaurant__pic">
+            <img src="img/onepage_restaurant.jpg" alt="restaurant">
+        </div>
+        <div class="opening__hours">
+            <h2>Opening Hours</h2>
+            <div class="cols">
+                <div class="col">
+                    <p>Mon & Tue CLOSED</p>
+                    <p>Wednesday 10:00 - 24:00</p>
+                    <p>Thursday 10:00 - 24:00</p>
+                </div>
+                <div class="col">
+                    <p>Friday 10:00 - 12:00</p>
+                    <p>Saturday 10:00 - 23:00</p>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="our__location">
+            <img class="map" src="img/map.jpg" alt="Where we are">
+        </div>
+    </section> -->
+
+    <section class="info">
+        <h2 class="title">Questions & Answers</h2>
+        <div class="info__wrap">
+            <button class="question">Question 1</button>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="info__wrap">
+            <button class="question">Question 2</button>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="info__wrap">
+            <button class="question">Question 3</button>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="title">Contact</h2>
+        <p>Find us at some address at some place or call us at 05050515-122330</p>
+        <div>
+            <span>FYI!</span> We offer full-service catering for any event, large or small. We understand ypur needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.
+        </div>
+        <p>Reserve a table, ask for today's special or just send us a message:</p>
+        <form action="action_page.php" method="post">
+            <input type="text" name="name" placeholder="Name"><br><br>
+            <input type="number" name="number" placeholder="How many people"><br><br>
+            <input type="date" name="date" placeholder="11/16/2020 08:00 PM"><br><br>
+            <input type="text" placeholder="Message \ Special requirements"><br><br>
+            <input type="submit" name="submit" value="Send message">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>Footer area</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
